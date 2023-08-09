@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Calculadora de Perímetro e Área do Retângulo</title>
+</head>
+<body>
+<h1>Calculadora de Perímetro e Área do Retângulo</h1>
+<label for="largura">Largura do Retângulo:</label>
+“<input type="number" id="largura" step="any"><br>
+<label for="altura">Altura do Retângulo:</label>
+<input type="number" id="altura" step="any"><br>
+<button onclick="calcular()">Calcular</button>
+<script>
+function calcular() {
+const larguralnput = document.getelementById("largura");
+const alturalnput = document.getElementsById("altura")
+let largura = parseFloat(larguralnput.value);
+let altura = parseFloat(alturainputvalue);
+var resultado ="";
+let perimetro = 2 * (largura + altura);
+let area = largura * altura;
+resultado = "Perímetro do Retângulo: " + perimetro + "\n";
+resultado += "Área do Retângulo: " + area;
+alert(resultado);
+}
+</script>
+</body>
+<html>

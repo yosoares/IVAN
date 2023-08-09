@@ -1,0 +1,150 @@
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#area-cabecalho {
+    background-color: #c444ae;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+#area-logo {
+    border: 200px;
+    padding: 10px;
+    text-align: center;
+    background-color: #dd84d900;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin: 0px;
+}
+
+#area-menu {
+    font-size: 20px;
+}
+
+.branco {
+    color: rgb(255, 255, 255);
+}
+
+.fundo1 {
+    background-color: #e0cadc;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+a:houver {
+    text-decoration: underline;
+
+}
+
+#area-cabeçalho a:link,
+#area-cabecalho a:visited {
+    color: #4e4e4e;
+    padding: 8px 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+#area-cabecalho {
+    background-color: #9bc3ee;
+    padding: px;
+    text-align: center;
+}
+
+#area-logo {
+    background-color: #9bc3ee;
+    padding: 30px;
+}
+
+.branco {
+    color: white;
+}
+
+#area-menu {
+    background-color: #9bc3ee;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #0A3A70;
+    border-style: hidden;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#area-cabecalho a:link,
+#area-cabecalho a:visited {
+    color: #FFF;
+    padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+    color: #0A3A70;
+    background: #FFF;
+    text-decoration: none;
+}
+
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+    padding: 12px;
+}
+
+#area-principal {
+    width: 660px;
+    margin: 10px;
+    padding: 15px;
+}
+
+#area-postagens {
+    width: 660px;
+    float: left;
+}
+
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+h1,
+h2 {
+    color: #49525c;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.macaco {
+    display: flex;
+    justify-content: center;
+}

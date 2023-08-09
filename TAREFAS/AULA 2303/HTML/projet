@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AllinOne -Informática Store -Index</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="txte/css" href="css/reset.css">
+    <meta http-equiv="refresh" content="3">
+    <link rel="stylesheet" type="text /css" href="css/estilo.css">
+</head>
+
+<body id="fundo">
+    <div id="area-cabecalho">
+        <div id="area-logo">
+            <h1 id="title">TECHlab<spanclass="branco">Tudo em Tecnologia para você</span></h1>
+            <p class="text"></p>
+            <p class="text"></p>
+
+            </divid>
+            </divid>
+</body>
+
+</html>
