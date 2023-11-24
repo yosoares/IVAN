@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   View,
   Text,
@@ -6,12 +6,12 @@ import {
   StyleSheet,
   ScrollView,
   StatusBar,
-} from "react-native";
+} from "react-native"
  
 const App = () => {
   return (
-    <ScrollView style={styles.container} stickyHeaderIndices={[1]} >
-      <StatusBar backgroundColor="yellow" barstyle="dark-content" />
+    <ScrollView style={styles.container} stickyHeaderIndices={[3]} >
+      <StatusBar backgroundColor="black" barstyle="dark-content" />
       <View style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.headerText}>Cidade Bauru - Sp</Text>
@@ -44,35 +44,26 @@ const App = () => {
         <View style={styles.secaoesquerda} >
           <Image source={require('./img/bauru3.jpg')} />
           <Text style={styles.sectinText} >
-          <Text style={styles.conteudo3}>
-            MAIS TEXO CHATO Bauru é conhecida por um danuiche que leva o mesmo
-            nome, criado pelo advogado bauruense Casimiro Pinto Neto no bar
-            Ponto Chic, localizado no Largo do Paiaçandu, na cidade de São
-            Paulo, em 1934, quando era aluno da Faculdade de Direito da
-            Universidade de São Paulo. Mais tarde, o sanduiche ganhou fama
-            devido ao bar "Zé do Esquinão", durante decadas instalado no centro
-            de bauru.
-          </Text>
           </Text>
         </View>
       </View>
     </ScrollView>
-  );
-};
+  )
+}
  
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "purple",
+    backgroundColor: "#010326",
   },
   header: {
-    backgroundColor: "pink",
+    backgroundColor: "#010330",
     padding: 20,
     alignItems: "center",
     marginTop: StatusBar.currentHeight || 0,
   },
   headerText: {
-    color: "blue",
+    color: "white",
     fontSize: 20,
     fontWeight: "bold",
   },
@@ -89,19 +80,12 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   conteudo: {
-    backgroundColor: "pink",
+    backgroundColor: "#F2A679",
     fontSize: 16,
     textAlign: "justify",
   },
   conteudo2:{
-    backgroundColor:'red',
-    fontSize:16,
-    textAlign:'justify',
-    padding:5,
-    marginTop:5,
-  },
-  conteudo3:{
-    backgroundColor:'red',
+    backgroundColor:'#F26E50',
     fontSize:16,
     textAlign:'justify',
     padding:5,
@@ -117,6 +101,6 @@ const styles = StyleSheet.create({
     height:150,
     resizeMode: 'cover',
   }
-});
+})
  
 export default App;
