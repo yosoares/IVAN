@@ -2,105 +2,112 @@ import React from "react"
 import {
   View,
   Text,
-  Image,
   StyleSheet,
   ScrollView,
   StatusBar,
+  SafeAreaView, Image
 } from "react-native"
- 
-const App = () => {
+export default function App() {
+
   return (
-    <ScrollView style={styles.container} stickyHeaderIndices={[3]} >
-      <StatusBar backgroundColor="black" barstyle="dark-content" />
-      <View style={styles.container}>
-        <View style={styles.header}>
-          <Text style={styles.headerText}>Cidade Bauru - Sp</Text>
-          {/* Texto */}
+    <SafeAreaView style={styles.estilodabarra}>
+      <StatusBar translucent={false} backgroundColor='#ffffff' barStyle='dark-content' />
+      <View style={styles.espacobaixobarrastatus} />
+      <ScrollView>
+        <View style={styles.fundocabecalho}>
+          <Text style={styles.cabecalho}> Laurinha </Text>
+          
         </View>
-        <View style={styles.distancia}>
-          <Text style={styles.conteudo}>
-            Segue abaixo uma porrada de texto extremamente desnecessario. Bauru
-            é u municipio brasileiro do interior de São Paulo, sendo o mais
-            populoso do Centro-Oeste paulista. É uma das 19 cidades que integram
-            a egião imediata de Bauru, por sua vez, é uma das quatro regiões que
-            integram a região intermediaria de bauru, que é formaa por 48
-            cidades E NINGUEM LIGA.
-          </Text>
-          <Image source={require("./img/bauru.jpeg")} style={styles.image} />
+        <View style={styles.textoalinhamento}>
+          <View style={styles.bordaTexto}>
+            <Text style={styles.texto}>Tem 19 anos, nasceu em 2004 de julho no dia quem leu, meu pau te comeu
+              {'\n'} {'\n'}
+              O aquecimento global e o efeito estufa são fenômenos interligados que têm implicações significativas para o nosso planeta. Vamos explorar cada um deles:
+              {'\n'} {'\n'}
+              1. **Efeito Estufa:**
+              O efeito estufa é um processo natural e vital para a vida na Terra. Ele ocorre quando certos gases na atmosfera, como dióxido de carbono (CO2), metano (CH4) e óxidos de nitrogênio (NOx), absorvem parte da radiação solar que é refletida pela superfície da Terra. Esses gases, conhecidos como gases de efeito estufa, atuam como uma cobertura térmica, retendo o calor e mantendo a temperatura da Terra em um nível adequado para a vida.
+              {'\n'} {'\n'}
+              2. **Aquecimento Global:**
+              O problema surge quando há um aumento significativo na concentração desses gases de efeito estufa, principalmente devido às atividades humanas, como queima de combustíveis fósseis, desmatamento e processos industriais. Esse aumento na concentração intensifica o efeito estufa, levando a um aumento na temperatura média da Terra, conhecido como aquecimento global.
+              {'\n'} {'\n'}
+              Os impactos do aquecimento global são amplos e incluem o derretimento das calotas polares, elevação do nível do mar, eventos climáticos extremos (como furacões e secas), mudanças nos padrões de precipitação, e alterações nos ecossistemas e na biodiversidade. Além disso, o aquecimento global tem implicações sérias para a segurança alimentar, a saúde humana e a estabilidade econômica.
+              {'\n'} {'\n'}
+              3. **Mitigação e Adaptação:**
+              A mitigação do aquecimento global envolve a redução das emissões de gases de efeito estufa por meio de práticas sustentáveis, transição para fontes de energia renovável e a implementação de tecnologias mais limpas. A adaptação é igualmente crucial e implica a preparação para as mudanças inevitáveis que já estão em curso.
+              {'\n'} {'\n'}
+              A conscientização global e ações coletivas são essenciais para enfrentar esses desafios e trabalhar em direção a um futuro sustentável. O entendimento do efeito estufa e suas ramificações no contexto do aquecimento global é fundamental para orientar políticas, práticas e escolhas individuais que promovam a preservação do nosso planeta.
+            </Text>
+          </View>
+          <View style={styles.espacoAbaixoBarraStatus} />
+
+          <View style={styles.bordaimagem}>
+            <View style={styles.imagemContainer}>
+              <View style={styles.imagem}>
+                <Image source={require('./img/bauru.jpeg')}
+                  style={{ width: 300, height: 150 }} />
+              </View>
+            </View>
+          </View>
+
         </View>
-        <View style={styles.espaço}>
-          <Text style={styles.conteudo2}>
-            MAIS TEXO CHATO Bauru é conhecida por um danuiche que leva o mesmo
-            nome, criado pelo advogado bauruense Casimiro Pinto Neto no bar
-            Ponto Chic, localizado no Largo do Paiaçandu, na cidade de São
-            Paulo, em 1934, quando era aluno da Faculdade de Direito da
-            Universidade de São Paulo. Mais tarde, o sanduiche ganhou fama
-            devido ao bar "Zé do Esquinão", durante decadas instalado no centro
-            de bauru.
-          </Text>
-          <Image source={require("./img/bauru2.jpg")}
-          style={styles.image} />
-        </View>
-        <View style={styles.secaoesquerda} >
-          <Image source={require('./img/bauru3.jpg')} />
-          <Text style={styles.sectinText} >
-          </Text>
-        </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </SafeAreaView>
   )
 }
- 
+
 const styles = StyleSheet.create({
-  container: {
+  estilodabarra: {
     flex: 1,
-    backgroundColor: "#010326",
+    backgroundColor: '#818274'
   },
-  header: {
-    backgroundColor: "#010330",
-    padding: 20,
-    alignItems: "center",
-    marginTop: StatusBar.currentHeight || 0,
+  espacobaixobarrastatus: {
+    height: 15,
+    backgroundColor: '#A3AB78'
   },
-  headerText: {
-    color: "white",
+  cabecalho: {
     fontSize: 20,
-    fontWeight: "bold",
+    fontWeight: 'bold',
+    textAlign: 'justify',
+    textAlignVertical: 'center',
+    fontStyle: 'italic'
   },
-  espaço:{
-    padding:10,
-    marginTop:10,
-  },
-  distancia: {
+  fundocabecalho: {
+    backgroundColor: '#506266',
     padding: 10,
-    marginTop: 5,
+    justifyContent: 'center',
+    fontStyle: 'italic'
+    //laurinha
   },
-  secaoesquerda:{
-    flexDirection: 'row',
-    padding: 10,
+  textoalinhamento: {
+    flex: 1,
+    padding: 20
   },
-  conteudo: {
-    backgroundColor: "#F2A679",
-    fontSize: 16,
-    textAlign: "justify",
+  texto: {
+    textAlign: 'justify'
   },
-  conteudo2:{
-    backgroundColor:'#F26E50',
-    fontSize:16,
-    textAlign:'justify',
-    padding:5,
-    marginTop:5,
+  texto: {
+    textAlign: 'justify'
   },
-  image: {
-    width: "100%",
-    height: 200,
-    marginTop: 10,
+  bordaTexto: {
+    borderWidth: 1,
+    borderColor: '#BDE038',
+    borderRadius: 8,
+    padding: 15
   },
-  imagemEsquerda:{
-    width:100,
-    height:150,
-    resizeMode: 'cover',
+  espacoAbaixoBarraStatus: {
+    height: 10,
+    // backgroundColor: 'red'
+  },
+  imagem: {
+    resizeMode: 'cover', //cobre completamente o container
+    borderRadius: 8
+  },
+  bordaimagem: {
+    borderWidth: 1,
+    borderColor: 'blue',
+    borderRadius: 8,
+    padding: 15,
+    justifyContent: 'center', //centralizar verticalmente
+    alignItems: 'center' //centralizar horizontalmente
   }
 })
- 
-export default App;
